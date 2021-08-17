@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>sample1</title>
+    <meta name="description" content="Videosphere - A-Frame">
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="./js/play-on-click.js"></script>
+    <script src="./js/hide-on-play.js"></script>
+</head>
+
+<body>
+    <a-scene>
+
+        <a-assets>
+            <video id="penguin" preload="auto" loop="true" src="assest/vr.mp4"></video>
+        </a-assets>
+
+        <a-videosphere rotation="0 -90 0" src="#penguin" visible="false" play-on-click> </a-videosphere>
+
+        <a-camera>
+            <a-entity position="0 0 -1.5" text="align: center; width: 6; wrapCount: 100; color: black; value: Click or tap to start video" hide-on-play="#penguin">
+            </a-entity>
+        </a-camera>
+    </a-scene>
+</body>
+
+</html>
