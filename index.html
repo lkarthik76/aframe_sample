@@ -13,13 +13,13 @@
     <a-scene>
 
         <a-assets>
-            <video id="penguin" preload="auto" loop="true" src="assest/vr.mp4"></video>
+            <video id="video" preload="auto" loop="true" src="assest/vr.mp4"></video>
         </a-assets>
 
-        <a-videosphere rotation="0 -90 0" src="#penguin" visible="false" play-on-click> </a-videosphere>
+        <a-videosphere rotation="0 -90 0" src="#video" visible="false" play-on-click> </a-videosphere>
 
         <a-camera>
-            <a-entity position="0 0 -1.5" text="align: center; width: 6; wrapCount: 100; color: black; value: Click or tap to start video" hide-on-play="#penguin">
+            <a-entity position="0 0 -1.5" text="align: center; width: 6; wrapCount: 100; color: black; value: Click or tap to start video" hide-on-play="#video">
             </a-entity>
         </a-camera>
     </a-scene>
