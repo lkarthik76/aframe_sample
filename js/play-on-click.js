@@ -13,7 +13,6 @@ AFRAME.registerComponent('play-on-click', {
      var videoEl = this.el.getAttribute('material').src;
    if (!videoEl) { return; }
      this.el.object3D.visible = true;
-//     videoEl.load();
 //     videoEl.play();
        var myVideo = document.querySelector('video');
         if (!myVideo) { return; }
