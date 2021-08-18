@@ -10,9 +10,9 @@ AFRAME.registerComponent('play-on-click', {
     window.removeEventListener('click', this.onClick);
   },
   onClick: function (evt) {
-   //  var videoEl = this.el.getAttribute('material').src;
-  // if (!videoEl) { return; }
-//     this.el.object3D.visible = true;
+     var videoEl = this.el.getAttribute('material').src;
+   if (!videoEl) { return; }
+     this.el.object3D.visible = true;
 //     videoEl.load();
 //     videoEl.play();
        var myVideo = document.querySelector('video');
