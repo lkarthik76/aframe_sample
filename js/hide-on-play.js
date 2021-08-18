@@ -19,9 +19,9 @@ AFRAME.registerComponent('hide-on-play', {
     }
   },
   onPlaying: function (evt) {
-    this.el.object3D.visible = false;
+    this.el.object3D.visible = true;
   },
   onPause: function (evt) {
-    this.el.object3D.visible = true;
+    this.el.object3D.visible = false;
   }
 });
